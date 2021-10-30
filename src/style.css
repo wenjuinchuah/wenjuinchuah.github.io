@@ -100,6 +100,14 @@ nav{
 
 .dropdown:hover .dropdown-content, .language:hover .dropdown-language {display: block;}
 
+/* Main */
+main{
+    background: #F0F0F0;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Slideshow
 #slideshow img{
     object-fit: cover;
     animation: opachange 1s ease-in 0s 1 normal;
@@ -123,9 +131,55 @@ nav{
 @keyframes opachange{
     from{opacity: 0;}
     to{opacity: 1;}
+}*/
+
+/* Slideshow */
+#slideshow{
+    margin: 0 20px;
+    height: 500px;
+    display: flex;
 }
 
-/************ About Us ************/
+#slideshow .slide{
+    animation: opachange 1s ease-in 0s 1 normal;
+    max-width: 1400px;
+    height: 500px;
+    margin: auto;
+    object-fit: cover;
+    overflow: auto;
+}
+
+#slideshow button{
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: none;
+    float: right;
+    position: absolute;
+    top: 400px;
+    z-index: 1;
+}
+
+#slideshow button:hover{
+    background: #fff;
+    border: 3px solid gray;
+}
+
+#slideshow .right{
+    right: 20px;
+}
+
+#slideshow button img{
+    width: 100%;
+}
+
+@keyframes opachange{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+/* About Us */
 .aboutus{
     display: flex;
     align-items: center;
@@ -171,11 +225,11 @@ svg g:hover text, svg g:hover rect, svg g:hover polygon{
     font-family: sans-serif;
 	position: relative;
 	width: 100%;
-	height: 600px;
+	height: 700px;
 	border: 5px solid #CE0101;
 	border-radius: 25px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .content{
@@ -185,7 +239,7 @@ svg g:hover text, svg g:hover rect, svg g:hover polygon{
 
 .Achievement .box {
         position: relative;
-		left: 120px;
+		left: 130px;
         width: calc(300px - 15px);
         height: calc(400px - 20px);
         background: #ff8a8a;
@@ -245,12 +299,13 @@ svg g:hover text, svg g:hover rect, svg g:hover polygon{
     }
 	
 .Achievement .box:hover .content {
-        top: 85px;
+        top: 100px;
         opacity: 1;
     }
 	
 #showmore{
 	display: none;
+    opacity: 1;
 }
 
 /* Footer */
@@ -278,3 +333,92 @@ footer p a{
     height: 30px;
 }
 
+/* Sidebar */
+.sidebar-icon{
+    display: none;
+    font-size: xx-large;
+    font-weight: bold;
+    margin: auto;
+    position: relative;
+    right: 20px;
+    cursor: pointer;
+}
+
+#sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    background-color: #f1f1f1;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  
+  #sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bold;
+    color: #000;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  #sidebar a:hover {
+    color: #CE0101;
+  }
+  
+  #sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    padding-top: 60px;
+  }
+
+/* Display on different sizes */
+/* Not display Quotes */
+@media only screen and (max-width: 1400px) {
+    .logo .quotes{
+       display: none;
+    }
+}
+
+/* Not display Navbar */
+@media only screen and (max-width: 1100px) {
+    .nav-links{
+       display: none;
+    }
+    .dropbtn img{
+        min-width: 20px;
+        min-height: 20px;
+        right: -20px;
+        top: 5px;
+    }
+    .slide{
+        object-fit: cover;
+     }
+     .sidebar-icon{
+        display: inline-block;
+     }
+     .logo{
+         width: 200px;
+     }
+     .logo-container img{
+        padding-top: 20px;
+        width:150%;
+     }
+     .logo-container{
+         width: 128px;
+     }
+}
+
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }

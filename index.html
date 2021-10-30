@@ -14,7 +14,7 @@
                 <div class="logo-container">
                     <img src="src/gardenia.png" alt="Logo">
                 </div>
-                <div class="logo-container">
+                <div class="logo-container quotes">
                     <img src="src/sogood.png" alt="Good">
                 </div>
             </div>
@@ -47,8 +47,24 @@
                     </div>
                 </div>
             </nav>
+            <div class="sidebar-icon" onclick="openNav()">&#9776;</div>
+            <div id="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html">Home</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="#">Products</a>
+                <a href="#">Halal Matters</a>
+                <a href="#">Activities</a>
+                <a href="#">Recipe</a>
+                <a href="#">Tour</a>
+                <a href="#">Health Tips</a>
+                <a href="#">R&D/QA</a>
+                <a href="#">The Truth</a>
+                <a href="#">Career Center</a>
+                <a href="#">Contact Us</a>
+            </div>
         </header>
-        <main>
+        <!-- <main>
             <div id="slideshow" style="border: 5px solid gray; border-style: inset;" align="center">
                 <button type="button" onclick="prev()" style="position:absolute; right:92%; top:60%"><</button>
                 <button type="button" onclick="next()" style="position:absolute; left:92%; top:60%">></button>
@@ -59,7 +75,14 @@
             <div align="center" id="activity">
 
             </div>
-        </main>
+        </main> -->
+        <main>
+            <div id="slideshow">
+                <button class="button left" onclick="prev()"><img src="src/left.png" alt="Left Arrow"></button>
+                <img class="slide" src="src/slide1.jpeg" alt="slide1" id="image">
+                <button class="button right" onclick="next()"><img src="src/right.png" alt="Right Arrow"></button>
+            </div>
+        </main> 
         <footer>
             <p>Follow us on</p>
             <div class="icon">

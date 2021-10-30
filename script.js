@@ -47,7 +47,8 @@ function show(){
 	
 	b.style.display = "none";
 	a.style.display = "block";
-	c[0].style.height = "1400px";
+    a.style.animation = "opachange 1s ease-in 0s 1 normal";
+	c[0].style.height = "1500px";
 }
 
 function hide(){
@@ -59,5 +60,5 @@ function hide(){
 	
 	b.style.display = "block";
 	a.style.display = "none";
-	c[0].style.height = "600px";
+	c[0].style.height = "700px";
 }
