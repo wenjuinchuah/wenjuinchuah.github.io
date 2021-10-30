@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gardenia Bakeries (KL) Sdn Bhd</title>
+        <link rel="stylesheet" href="src/style.css">
+        <link rel="icon" href="src/icon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <script src="script.js"></script>
+        <header>
+            <div class="logo">
+                <div class="logo-container">
+                    <img src="src/gardenia.png" alt="Logo">
+                </div>
+                <div class="logo-container">
+                    <img src="src/sogood.png" alt="Good">
+                </div>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=iik25wqIuFo" target="_blank">Products</a></li>
+                    <li><a href="#">Halal Matters</a></li>
+                    <div class = "dropdown">
+                        <button class="dropbtn">More</button>
+                        <div class="dropdown-content">
+                            <a href="#">Activities</a>
+                            <a href="#">Recipe</a>
+                            <a href="#">Tour</a>
+                            <a href="#">Health Tips</a>
+                            <a href="#">R&D/QA</a>
+                            <a href="#">The Truth</a>
+                            <a href="#">Career Center</a>
+                            <a href="#">Contact Us</a>
+                        </div>
+                    </div>
+                </ul>
+                <div class = "language">
+                    <button class="dropbtn"><img src="src/globe.png" alt="Globe"></button>
+                    <div class="dropdown-language">
+                        <a href="#">English</a>
+                        <a href="#">B. Melayu</a>
+                        <a href="#">中文</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div id="slideshow" style="border: 5px solid gray; border-style: inset;" align="center">
+                <button type="button" onclick="prev()" style="position:absolute; right:92%; top:60%"><</button>
+                <button type="button" onclick="next()" style="position:absolute; left:92%; top:60%">></button>
+                <img src="src/slide1.jpeg" width=100% height=auto alt="Pic not loaded" id="image">
+
+            </div>
+
+            <div align="center" id="activity">
+
+            </div>
+        </main>
+        <footer>
+            <p>Follow us on</p>
+            <div class="icon">
+                <a href="https://www.facebook.com/GardeniaKL" title="Facebook" target=_blank><img src="src/fb.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/gardenia_kl/" title="Instagram" target=_blank><img src="src/ig.png" alt="Instagram"></a>
+                <a href="https://twitter.com/gardenia_kl" title="Twitter" target=_blank><img src="src/tw.png" alt="Twitter"></a>
+                <a href="https://www.youtube.com/user/GardeniaKL" title="Youtube" target=_blank><img src="src/yt.png" alt="Youtube"></a>
+            </div>
+            <p>Copyright &copy (2004-2018) Gardenia Bakeries (KL) Sdn. Bhd (139386X) All Rights Reserved. | <a href="#">PRIVACY</a></p>
+        </footer>
+    </body>
+</html>
