@@ -167,31 +167,6 @@ svg g:hover text, svg g:hover rect, svg g:hover polygon{
     display:block;
 }
 
-/* Footer */
-footer{
-    background: #110971;
-    color: #fff;
-    text-align: center;
-}
-
-footer p{
-    padding: 10px;;
-}
-
-footer p a{
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-}
-
-.icon{
-    margin: 5px 0 20px 0;
-}
-
-.icon img{
-    height: 30px;
-}
-
 .Achievement {
     font-family: sans-serif;
 	position: relative;
@@ -199,6 +174,8 @@ footer p a{
 	height: 600px;
 	border: 5px solid #CE0101;
 	border-radius: 25px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .content{
@@ -208,7 +185,7 @@ footer p a{
 
 .Achievement .box {
         position: relative;
-		left: 100px;
+		left: 120px;
         width: calc(300px - 15px);
         height: calc(400px - 20px);
         background: #ff8a8a;
@@ -256,14 +233,13 @@ footer p a{
 .Achievement .box .content {
         position: absolute;
         top: 120px;
-		right: 25px;
 		margin-right: 20px;
         height: calc(100% - 80px);
         box-sizing: border-box;
         transition: 0.5s;
         opacity: 0;
         margin: 0;
-        padding: 0;
+        padding: 0px 20px 0px 25px;
         color: #fff;
         text-indent: -3px;
     }
@@ -276,3 +252,29 @@ footer p a{
 #showmore{
 	display: none;
 }
+
+/* Footer */
+footer{
+    background: #110971;
+    color: #fff;
+    text-align: center;
+}
+
+footer p{
+    padding: 10px;;
+}
+
+footer p a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.icon{
+    margin: 5px 0 20px 0;
+}
+
+.icon img{
+    height: 30px;
+}
+
