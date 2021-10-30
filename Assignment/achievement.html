@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<style>
+    *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    }
+
+    .Achievement {
+        margin: 20px;
+        font-family: sans-serif;
+        position: relative;
+        width: 100%;
+    }
+
+    .Achievement .box {
+        position: relative;
+        width: calc(400px - 15px);
+        height: calc(300px - 20px);
+        background: #ff8a8a;
+        float: left;
+        margin: 15px;
+        box-sizing: border-box;
+        overflow: hidden;
+        border-radius: 25px;
+    }
+
+    .Achievement .box .sub {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #CE0101;
+        transition: 0.5s;
+        z-index: 1;
+        font-family: Brush Script MT;
+    }
+
+    .Achievement .box:hover .sub {
+        top: 20px;
+        left: calc(50% - 40px);
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+
+    .Achievement .box .sub .year {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 40px;
+        transition: 0.5s;
+        color: #fff;
+    }
+
+    .Achievement .box:hover .sub .year {
+        font-size: 25px;
+    }
+
+    .Achievement .box .content {
+        position: absolute;
+        top: 120px;
+        height: calc(100% - 80px);
+        box-sizing: border-box;
+        transition: 0.5s;
+        opacity: 0;
+        margin: 0;
+        padding: 0;
+        color: #fff;
+        text-indent: -3px;
+    }
+
+    .Achievement .box:hover .content {
+        top: 85px;
+        opacity: 1;
+    }
+
+    .Achievement .box:nth-child(even) .sub {
+        background: #110971;
+    }
+
+    .Achievement .box:nth-child(even) {
+        background: #897eff;
+    }
+</style>
+
+<body>
+    <div class="Achievement">
+        <h1 style="text-align: center;">Achievements</h1>
+        <div class="box">
+            <div class="sub">
+                <h class="year">2001</h>
+            </div>
+            <div class="content">
+                <ul>
+                    <li>Best Supplier 2001 (Category: Bread), Dairy Farm Giant Retail</li>
+                </ul>
+            </div>
+        </div>
+        <div class="box">
+            <div class="sub">
+                <h class="year">2002</h>
+            </div>
+            <div class="content">
+                <ul>
+                    <li>Quality Management Systems ISO 9001,<br>SIRIM QAS International Sdn Bhd</li>
+                    <li>Superbrands Awards for 3 consecutive terms, Superbrands Malaysia</li>
+                </ul>
+            </div>
+        </div>
+        <div class="box">
+            <div class="sub">
+                <h class="year">2003</h>
+            </div>
+            <div class="content">
+                <ul>
+                    <li>Superbrands Awards for 3 consecutive terms, Superbrands Malaysia</li>
+                </ul>
+            </div>
+        </div>
+        <div class="box">
+            <div class="sub">
+                <h class="year">2004</h>
+            </div>
+            <div class="content">
+                <ul>
+                    <li>Superbrands Awards for 3 consecutive terms, Superbrands Malaysia</li>
+                    <li>National Award for Creativity and Innovation, Malaysian Design Technology Centre</li>
+                </ul>
+            </div>
+        </div>
+        <div class="box">
+            <div class="sub">
+                <h class="year">2005</h>
+            </div>
+            <div class="content">
+                <ul>
+                    <li>Superbrands Awards for 3 consecutive terms, Superbrands Malaysia</li>
+                    <li>MS 1480:1999 – Food Safety according to Hazard Analysis and Critical Control Point (HACCP)
+                        System, SIRIM QAS International<br>Sdn Bhd</li>
+                    <li>Universal Integrated System – ISI 2020, Research Institute of Standards in Islam</li>
+                </ul>
+            </div>
+        </div>
+        <div class="box">
+            <div class="sub">
+                <h class="year">2006</h>
+            </div>
+            <div class="content">
+                <ul>
+                    <li>Superbrands Consumers' Choice Award, Superbrands Malaysia</li>
+                    <li>Low Glycaemic Diabetic-Friendly, Diet-Friendly Seal, Glycemic Research Institute, Washington
+                        D.C.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="box">
+            <div class="sub">
+                <h class="year">2007 </h>
+            </div>
+            <div class="content">
+                <ul>
+                    <li>Low Glycaemic Diabetic-Friendly, Diet-Friendly Seal, Glycemic Research Institute, Washington
+                        D.C.</li>
+                    <li>Highly Commended Product Award, Malaysian Institute of Food Technology (MIFT)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="box">
+            <div class="sub">
+                <h class="year">2008 </h>
+            </div>
+            <div class="content">
+                <ul>
+                    <li>Malaysia's Choice Award 2008, Superbrands Malaysia</li>
+                </ul>
+            </div>
+        </div>
+        <div class="box">
+            <div class="sub">
+                <h class="year">2009 </h>
+            </div>
+            <div class="content">
+                <ul>
+                    <li>Malaysia's Top Ten Brands 2009 - Gardenia Malaysia (7th Place), The Nielson Company, Superbrands
+                        survey</li>
+                </ul>
+            </div>
+        </div>
+        <div class="box">
+            <div class="sub">
+                <h class="year">2010 </h>
+            </div>
+            <div class="content">
+                <ul>
+                    <li>Putra Brand Awards - GARDENIA Malaysia (Gold award), Association of Accredited Advertising
+                        Agents (endorsed by Malaysia External Trade Development Corporation)
+                        Consumers' survey on the Most Preferred<br>Brand (Foodstuff category)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="box">
+            <div class="sub">
+                <h class="year">2011 </h>
+            </div>
+            <div class="content">
+                <ul>
+                    <li>Malaysia's Top Ten Brands 2011 - Gardenia Malaysia (3rd Place), The Nielson Company, Superbrands
+                        survey</li>
+                    <li>Putra Brand Awards - GARDENIA Malaysia (Gold award), Association of Accredited Advertising
+                        Agents (endorsed by Malaysia External Trade Development Corporation)
+                        Consumers' survey on the Most Preferred<br>Brand (Foodstuff category)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="box">
+            <div class="sub">
+                <h class="year">2012 </h>
+            </div>
+            <div class="content">
+                <ul>
+                    <li>Putra Brand Awards - GARDENIA Malaysia (Gold award), Association of Accredited Advertising
+                        Agents (endorsed by Malaysia External Trade Development Corporation)
+                        Consumers' survey on the Most Preferred<br>Brand (Foodstuff category)</li>
+                </ul>
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+</html>
