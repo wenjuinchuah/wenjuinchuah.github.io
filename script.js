@@ -62,3 +62,13 @@ function hide(){
 	a.style.display = "none";
 	c[0].style.height = "700px";
 }
+
+function toggleOn(){
+    document.getElementById("arrow_1").style.display = "inline";
+    document.getElementById("desc_1").style.display = "inline-block";
+}
+
+function toggleOff(){
+    document.getElementById("arrow_1").style.display = "none";
+    document.getElementById("desc_1").style.display = "none";
+}

@@ -241,20 +241,24 @@ main{
     background: #fff;
 }
 
-.history .circle1, .year .top1{
+.history .dot:hover{
+    background: #CE0101;
+}
+
+.history .circle1, .year1 ,.arrow1{
     flex: 1;
     margin-left: 150px;
 }
 
-.history .circle2, .year .bottom{
+.history .circle2, .year2 ,.arrow2{
     flex: 2;
 }
 
-.history .circle3, .year .top2{
+.history .circle3, .year3, .arrow3{
     margin-right: 200px;
 }
 
-.history .circle, .year{
+.history .circle, .year, .arrow{
     display: flex;
     position: relative;
     top: 157px;
@@ -262,20 +266,64 @@ main{
 }
 
 .history .year{
-    top: 70px;
+    top: 75px;
 }
 
-.history .year .top1{
-    margin-left: 135px;
+.history .year1{
+    margin-left: 138px;
 }
 
-.history .year .bottom{
-    top: 160px;
-    margin-left: 5px;
+.history .year2{
+    top: 147px;
 }
 
-.history .year .top2{
+.history .year3{
     margin-right: 180px;
+}
+
+.history img{
+    height: 20px;
+}
+
+.history .arrow{
+    top: 83px;
+}
+
+.history .arrow1{
+    margin-left: 155px;
+}
+
+.history .arrow2{
+    top: 14px;
+}
+
+.history .arrow3{
+    margin-right: 205px;
+}
+
+.history p{
+    background: #fff;
+    border: 3px solid #110971;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: justify;
+    max-width: 800px;
+}
+
+.history .desc1, .desc2, .desc3{
+    position: relative;
+    left: 70px;
+    top: 185px;
+}
+
+.history .desc2{
+    left: 420px;
+    top: -100px;
+}
+
+.history .desc3{
+    left: 560px;
+    top: 25px;
 }
 
 svg{
@@ -512,10 +560,10 @@ footer p a{
      .history .circle3{
         margin-right: 100px;
     }
-    .history .year .top1{
+    .history .year1{
         margin-left: 60px;
     }
-    .history .year .top2{
+    .history .year3{
         margin-right: 80px;
     }
 }
