@@ -208,9 +208,84 @@ main{
     margin: 20px;
 }
 
+/* History */
+.history{
+    border: 4px solid #110971;
+    border-radius: 20px;
+    background-image: url(src/icon.png);
+    background-color: rgba(255, 255, 255, 0.9);
+    background-blend-mode: lighten;
+    height: 525px;
+}
+
+.history h1{
+    text-align: center;
+    margin: 20px;
+}
+
+.history hr{
+    border: 3px solid #110971;
+    border-radius: 5px;
+    max-width: 90%;
+    margin: auto;
+    position: relative;
+    top: 203px;
+}
+
+.history .dot{
+    height: 30px;
+    width: 30px;
+    border: 3px solid #000;
+    border-radius: 3px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.history .circle1, .year .top1{
+    flex: 1;
+    margin-left: 150px;
+}
+
+.history .circle2, .year .bottom{
+    flex: 2;
+}
+
+.history .circle3, .year .top2{
+    margin-right: 200px;
+}
+
+.history .circle, .year{
+    display: flex;
+    position: relative;
+    top: 157px;
+    z-index: 1;
+}
+
+.history .year{
+    top: 70px;
+}
+
+.history .year .top1{
+    margin-left: 135px;
+}
+
+.history .year .bottom{
+    top: 160px;
+    margin-left: 5px;
+}
+
+.history .year .top2{
+    margin-right: 180px;
+}
+
+svg{
+    width: 100%;
+    height: 400px;
+}
+
 svg g rect{
     display: none;
-    fill: white;
+    fill: #fff;
     stroke: #110971;
 }
 
@@ -399,7 +474,7 @@ footer p a{
 /* Display on different sizes */
 /* Not display Quotes */
 @media only screen and (max-width: 1400px) {
-    .logo .quotes{
+    .logo .slogan{
        display: none;
     }
 }
@@ -431,6 +506,18 @@ footer p a{
      .logo-container{
          width: 128px;
      }
+     .history .circle1{
+         margin-left: 75px;
+     }
+     .history .circle3{
+        margin-right: 100px;
+    }
+    .history .year .top1{
+        margin-left: 60px;
+    }
+    .history .year .top2{
+        margin-right: 80px;
+    }
 }
 
 @media only screen and (max-width: 900px) {

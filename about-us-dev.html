@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gardenia Bakeries (KL) Sdn Bhd</title>
+        <link rel="stylesheet" href="src/style.css">
+        <link rel="icon" href="src/icon.png"> <!--a random pic as favicon for now, can change later-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <script src="script.js"></script>
+        <header>
+            <div class="logo">
+                <div class="logo-container">
+                    <img src="src/gardenia.png" alt="Logo">
+                </div>
+                <div class="logo-container slogan">
+                    <img src="src/sogood.png" alt="Good">
+                </div>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=iik25wqIuFo" target="_blank">Products</a></li>
+                    <li><a href="achievement.html">Halal Matters</a></li>
+                    <div class = "dropdown">
+                        <button class="dropbtn">More</button>
+                        <div class="dropdown-content">
+                            <a href="#">Activities</a>
+                            <a href="#">Recipe</a>
+                            <a href="#">Tour</a>
+                            <a href="#">Health Tips</a>
+                            <a href="#">R&D/QA</a>
+                            <a href="#">The Truth</a>
+                            <a href="#">Career Center</a>
+                            <a href="#">Contact Us</a>
+                        </div>
+                    </div>
+                </ul>
+                <div class = "language">
+                    <button class="dropbtn"><img src="src/globe.png" alt="Globe"></button>
+                    <div class="dropdown-language">
+                        <a href="#">English</a>
+                        <a href="#">B. Melayu</a>
+                        <a href="#">中文</a>
+                    </div>
+                </div>
+            </nav>
+            <div class="sidebar-icon" onclick="openNav()">&#9776;</div>
+            <div id="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html">Home</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="https://youtu.be/dQw4w9WgXcQ">Products</a>
+                <a href="#">Halal Matters</a>
+                <a href="#">Activities</a>
+                <a href="#">Recipe</a>
+                <a href="#">Tour</a>
+                <a href="#">Health Tips</a>
+                <a href="#">R&D/QA</a>
+                <a href="#">The Truth</a>
+                <a href="#">Career Center</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </header>
+        <main>
+            <div class="aboutus">
+                <div class="bakerman">
+                    <img src="src/bakerman.png" style="float: left;" alt="Bakerman">
+                </div>  
+                <div class="container">
+                    <h2 class="centered">About Us</h2>
+                    <p class="centered">Gardenia Foods (S) Pte Ltd. (also known as Gardenia Bakeries or Gardenia) is a Singaporean baked-goods company with presence in Singapore, Indonesia, Malaysia and the Philippines. It is listed on the Singapore Exchange (SGX) via its parent company, QAF Limited, which also owns Bonjour Bakery, and are headquartered at the Chinatown Complex in South Bridge Road.</p>
+                </div>
+            </div>
+
+            <div class="history">
+                <h1> Brief History</h1>
+                <hr>
+                <div class="year">
+                    <h2 class="year top1">1969</h2>
+                    <h2 class="year bottom">1986</h2>
+                    <h2 class="year top2">Today</h2>
+                </div>
+                <div class="circle">
+                    <div class="circle1">
+                        <div class="dot"></div>
+                    </div>
+                    <div class="circle2">
+                        <div class="dot"></div>
+                    </div>
+                    <div class="circle3">
+                        <div class="dot"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>Follow us on</p>
+            <div class="icon">
+                <a href="https://www.facebook.com/GardeniaKL" title="Facebook" target=_blank><img src="src/fb.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/gardenia_kl/" title="Instagram" target=_blank><img src="src/ig.png" alt="Instagram"></a>
+                <a href="https://twitter.com/gardenia_kl" title="Twitter" target=_blank><img src="src/tw.png" alt="Twitter"></a>
+                <a href="https://www.youtube.com/user/GardeniaKL" title="Youtube" target=_blank><img src="src/yt.png" alt="Youtube"></a>
+            </div>
+            <p>Copyright &copy (2004-2018) Gardenia Bakeries (KL) Sdn. Bhd (139386X) All Rights Reserved. | <a href="#">PRIVACY</a></p>
+        </footer>
+
+</html>
