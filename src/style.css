@@ -212,7 +212,7 @@ main{
 .history{
     border: 4px solid #110971;
     border-radius: 20px;
-    background-image: url(src/icon.png);
+    background-image: url(icon.png);
     background-color: rgba(255, 255, 255, 0.9);
     background-blend-mode: lighten;
     height: 525px;
@@ -258,7 +258,7 @@ main{
     margin-right: 200px;
 }
 
-.history .circle, .year, .arrow{
+.history .circle, .year, .arrow, .description{
     display: flex;
     position: relative;
     top: 157px;
@@ -289,11 +289,16 @@ main{
     top: 83px;
 }
 
+.history #arrow_1, #arrow_2, #arrow_3{
+    display: none;
+}
+
 .history .arrow1{
     margin-left: 155px;
 }
 
 .history .arrow2{
+    right: 7px;
     top: 14px;
 }
 
@@ -308,24 +313,27 @@ main{
     padding: 10px;
     text-align: justify;
     max-width: 800px;
+    display: none;
 }
 
-.history .desc1, .desc2, .desc3{
-    position: relative;
-    left: 70px;
-    top: 185px;
+.history .description{
+    top: 90px;
+    margin: auto;
+}
+
+.history .desc1{
+    left: -30px;
 }
 
 .history .desc2{
-    left: 420px;
-    top: -100px;
+    top: -110px;
+    left: 60px;
 }
 
 .history .desc3{
-    left: 560px;
-    top: 25px;
+    right: -30px;
 }
-
+/* svg */
 svg{
     width: 100%;
     height: 400px;
@@ -566,6 +574,18 @@ footer p a{
     .history .year3{
         margin-right: 80px;
     }
+    .history .arrow1{
+        margin-left: 80px;
+    }
+    .history .arrow3{
+        margin-right: 105px;;
+    }
+    .history .desc1{
+        margin-left: 75px;
+    }
+    .history .desc3{
+        margin-right: 75px;
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -574,6 +594,12 @@ footer p a{
     }
     .aboutus{
         padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .history .desc2{
+        top: -150px;
     }
 }
 

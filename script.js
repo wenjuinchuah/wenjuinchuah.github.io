@@ -63,12 +63,32 @@ function hide(){
 	c[0].style.height = "700px";
 }
 
-function toggleOn(){
+function toggleOn1(){
     document.getElementById("arrow_1").style.display = "inline";
     document.getElementById("desc_1").style.display = "inline-block";
 }
 
-function toggleOff(){
+function toggleOff1(){
     document.getElementById("arrow_1").style.display = "none";
     document.getElementById("desc_1").style.display = "none";
+}
+
+function toggleOn2(){
+    document.getElementById("arrow_2").style.display = "inline";
+    document.getElementById("desc_2").style.display = "inline-block";
+}
+
+function toggleOff2(){
+    document.getElementById("arrow_2").style.display = "none";
+    document.getElementById("desc_2").style.display = "none";
+}
+
+function toggleOn3(){
+    document.getElementById("arrow_3").style.display = "inline";
+    document.getElementById("desc_3").style.display = "inline-block";
+}
+
+function toggleOff3(){
+    document.getElementById("arrow_3").style.display = "none";
+    document.getElementById("desc_3").style.display = "none";
 }
