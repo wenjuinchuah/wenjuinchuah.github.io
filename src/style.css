@@ -313,7 +313,6 @@ main{
     padding: 10px;
     text-align: justify;
     max-width: 800px;
-    display: none;
 }
 
 .history .description{
@@ -528,7 +527,7 @@ footer p a{
   }
 
 /* Display on different sizes */
-/* Not display Quotes */
+/* Not display slogan */
 @media only screen and (max-width: 1400px) {
     .logo .slogan{
        display: none;
@@ -603,7 +602,7 @@ footer p a{
     }
 }
 
-@media screen and (max-height: 450px) {
+@media only screen and (max-height: 450px) {
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
   }
