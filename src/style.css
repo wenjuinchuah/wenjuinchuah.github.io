@@ -381,7 +381,7 @@ svg g:hover text, svg g:hover rect, svg g:hover polygon{
 
 .Achievement .box {
         position: relative;
-		left: 130px;
+		left: 100px;
         width: calc(300px - 15px);
         height: calc(400px - 20px);
         background: #ff8a8a;
