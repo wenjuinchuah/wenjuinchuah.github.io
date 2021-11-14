@@ -183,7 +183,7 @@ main{
 .aboutus{
     display: flex;
     align-items: center;
-    padding: 50px 100px;
+    padding: 30px 100px;
 }
 
 .bakerman{
@@ -215,12 +215,33 @@ main{
     background-image: url(icon.png);
     background-color: rgba(255, 255, 255, 0.9);
     background-blend-mode: lighten;
-    height: 525px;
+    min-height: 449px;
+    margin: 10px;
 }
 
 .history h1{
     text-align: center;
     margin: 20px;
+}
+
+.history-container{
+    top: 25px;
+    height: 70px;
+}
+
+.history-container .arrow1, .year1, .year2, .year3, .dot{
+    margin: auto;
+    text-align: center;
+}
+
+.history-container, .description{
+    display: flex;
+    position: relative;
+}
+
+.history-container .year2{
+    position: relative;
+    top: -5px;
 }
 
 .history hr{
@@ -229,10 +250,10 @@ main{
     max-width: 90%;
     margin: auto;
     position: relative;
-    top: 203px;
+    top: 70px;
 }
 
-.history .dot{
+.history-container .dot{
     height: 30px;
     width: 30px;
     border: 3px solid #000;
@@ -241,97 +262,39 @@ main{
     background: #fff;
 }
 
-.history .dot:hover{
-    background: #CE0101;
-}
-
-.history .circle1, .year1 ,.arrow1{
-    flex: 1;
-    margin-left: 150px;
-}
-
-.history .circle2, .year2 ,.arrow2{
-    flex: 2;
-}
-
-.history .circle3, .year3, .arrow3{
-    margin-right: 200px;
-}
-
-.history .circle, .year, .arrow, .description{
-    display: flex;
-    position: relative;
-    top: 157px;
-    z-index: 1;
-}
-
-.history .year{
-    top: 75px;
-}
-
-.history .year1{
-    margin-left: 138px;
-}
-
-.history .year2{
-    top: 147px;
-}
-
-.history .year3{
-    margin-right: 180px;
-}
-
 .history img{
-    height: 20px;
-}
-
-.history .arrow{
-    top: 83px;
-}
-
-.history #arrow_1, #arrow_2, #arrow_3{
-    display: none;
-}
-
-.history .arrow1{
-    margin-left: 155px;
-}
-
-.history .arrow2{
-    right: 7px;
-    top: 14px;
-}
-
-.history .arrow3{
-    margin-right: 205px;
+    height: 25px;
+    margin-top: 4px !important;
 }
 
 .history p{
     background: #fff;
-    border: 3px solid #110971;
+    border: 2px solid #110971;
     border-radius: 10px;
     padding: 10px;
     text-align: justify;
     max-width: 800px;
+    line-height: 20px;
 }
 
-.history .description{
-    top: 90px;
+.description, .desc2{
+    position: relative;
+    top: 40px;
+    margin: 0 20px;
+}
+
+.desc1, .desc3{
+    margin: 10px;
+}
+
+.desc2 p{
     margin: auto;
 }
 
-.history .desc1{
-    left: -30px;
+.desc2{
+    top: 20px;
 }
 
-.history .desc2{
-    top: -110px;
-    left: 60px;
-}
-
-.history .desc3{
-    right: -30px;
-}
 /* svg */
 svg{
     width: 100%;
@@ -561,30 +524,6 @@ footer p a{
      .logo-container{
          width: 128px;
      }
-     .history .circle1{
-         margin-left: 75px;
-     }
-     .history .circle3{
-        margin-right: 100px;
-    }
-    .history .year1{
-        margin-left: 60px;
-    }
-    .history .year3{
-        margin-right: 80px;
-    }
-    .history .arrow1{
-        margin-left: 80px;
-    }
-    .history .arrow3{
-        margin-right: 105px;;
-    }
-    .history .desc1{
-        margin-left: 75px;
-    }
-    .history .desc3{
-        margin-right: 75px;
-    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -593,12 +532,6 @@ footer p a{
     }
     .aboutus{
         padding: 10px;
-    }
-}
-
-@media only screen and (max-width: 700px) {
-    .history .desc2{
-        top: -150px;
     }
 }
 
