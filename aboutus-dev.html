@@ -14,7 +14,7 @@
                 <div class="logo-container">
                     <img src="src/gardenia.png" alt="Logo">
                 </div>
-                <div class="logo-container slogan">
+                <div class="logo-container-slogan">
                     <img src="src/sogood.png" alt="Good">
                 </div>
             </div>
@@ -75,9 +75,9 @@
                 </div>
             </div>
 
-            <div align="center" style="border: 4px solid #110971; border-radius: 20px; background-image: url(src/icon.png); background-color: rgba(255, 255, 255, 0.9); background-blend-mode: lighten;">
-                <h1 style="position:relative; top: 40px"> Brief History </h1>
-                <svg width="1430" height="400">
+            <div style="border: 4px solid #110971; border-radius: 20px; background: url(src/icon.png) rgba(255, 255, 255, 0.9); background-blend-mode: lighten;">
+                <h1 style="text-align: center; margin: 20px 0;"> Brief History </h1>
+                <svg width="100%" height="max-content">
                     <text y="160" style="font-weight: bold; font-size: 25px">
                         <tspan x="120"> 1969 </tspan>
                         <tspan x="420" y="250"> 1986 </tspan>
@@ -159,7 +159,9 @@
                         </ul>
                     </div>
                 </div>
-                <h3 style="position:absolute; left:47%; top:600px;" id="button" onclick="show()">Show more</h3>
+
+                <div class="morebutton" id="button" onclick="show()"> <h3>Show more ▼</h3> </div>
+                
                 <div id="showmore">
                     <div class="box">
                         <div class="sub">
@@ -257,8 +259,9 @@
                             </ul>
                         </div>
                     </div>
-                    <h3 style="position:absolute; left:47%; top:1400px;" id="button2" onclick="hide()" >Show less</h3>
-                </div>
+
+                    <div class="morebutton" id="button2" onclick="hide()"><h3>Show less ▲</h3></div>
+
             </div>
 
         </main>

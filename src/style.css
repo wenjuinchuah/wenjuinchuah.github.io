@@ -5,7 +5,8 @@
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    font-family: 'Balsamiq Sans', cursive;
 }
 
 header{
@@ -14,6 +15,7 @@ header{
     border-bottom: 5px solid rgb(207, 207, 207);
     display: flex;
     height: 160px;
+    box-shadow: 0px 0px 10px rgb(65, 65, 65);
 }
 
 .logo{
@@ -42,7 +44,8 @@ nav{
     margin: auto;
 }
 
-.nav-links a, .dropbtn{
+.nav-links a, .nav-links .dropbtn{
+    font-family: 'Balsamiq Sans', cursive;
     text-decoration: none;
     color: #000;
     padding: 20px;
@@ -90,6 +93,8 @@ nav{
 
 .dropdown-language{
     min-width: auto;
+    top: 105px;
+    
 }
 
 .dropdown-content a, .dropdown-language a{
@@ -98,42 +103,26 @@ nav{
     display: block;
 }
 
-.dropdown:hover .dropdown-content, .language:hover .dropdown-language {display: block;}
+.dropdown:hover .dropdown-content, .language:hover .dropdown-language{
+    display: block;
+}
 
 /* Main */
 main{
     background: #F0F0F0;
     max-width: 100%;
-    height: auto;
 }
 
-/* Slideshow
-#slideshow img{
-    object-fit: cover;
-    animation: opachange 1s ease-in 0s 1 normal;
-    width: 100%; 
-    height: 500px;
+.gif{
+    text-align: center;
+    margin: auto;
 }
 
-#slideshow button{
-    border: 3px solid white;
-    border-radius: 50%;
-    background-color: black;
-    color: white;
-    padding: 20px;
-    opacity: 50%;
+.gif img{
+    max-width: 100%;
 }
 
-#slideshow button:hover{
-    background-color: gray;
-}
-
-@keyframes opachange{
-    from{opacity: 0;}
-    to{opacity: 1;}
-}*/
-
-/* Slideshow */
+/* Slideshow 
 #slideshow{
     margin: 0 20px;
     height: 500px;
@@ -177,10 +166,13 @@ main{
 @keyframes opachange{
     from{opacity: 0;}
     to{opacity: 1;}
-}
+}*/
 
 /* About Us */
 .aboutus{
+
+    background: linear-gradient( to top , rgb(241, 241, 241)90%, rgb(196, 196, 196));
+    text-shadow: 3px 3px 5px rgb(122, 122, 122);
     display: flex;
     align-items: center;
     padding: 30px 100px;
@@ -208,19 +200,28 @@ main{
     margin: 20px;
 }
 
+.pacifico_L{
+    font-family: 'Pacifico', cursive;
+    font-size: 55px;
+}
+
+.pacifico_normal{
+    font-family: 'Pacifico', cursive;
+}
+
 /* History */
 .history{
-    border: 4px solid #110971;
-    border-radius: 20px;
     background-image: url(icon.png);
     background-color: rgba(255, 255, 255, 0.9);
     background-blend-mode: lighten;
-    min-height: 449px;
-    margin: 10px;
+    min-height: 480px;
+    width: 100%;
+    overflow: auto;
 }
 
 .history h1{
     text-align: center;
+    text-shadow: 3px 3px 5px rgb(167, 167, 167);
     margin: 20px;
 }
 
@@ -229,7 +230,7 @@ main{
     height: 70px;
 }
 
-.history-container .arrow1, .year1, .year2, .year3, .dot{
+.history-container .arrow1, .history-container .year1, .history-container .year2, .history-container .year3, .history-container .dot{
     margin: auto;
     text-align: center;
 }
@@ -251,6 +252,15 @@ main{
     margin: auto;
     position: relative;
     top: 70px;
+    background-color: #110971;
+    box-shadow: 3px 3px 10px rgb(172, 172, 172);
+}
+
+/*replace history border*/
+.history_hr{
+    border: 2px solid #110971;
+    background-color: #110971;
+    box-shadow: 0px 0px 20px rgb(75, 75, 75);
 }
 
 .history-container .dot{
@@ -260,6 +270,14 @@ main{
     border-radius: 3px;
     border-radius: 50%;
     background: #fff;
+    box-shadow: 3px 3px 10px rgb(172, 172, 172);
+    transition:0.5s;
+}
+
+.history-container .dot:hover{
+    background: #ff8a8a;
+    border: 3px solid #CE0101;
+    box-shadow: 0px 0px 10px #CE0101;
 }
 
 .history img{
@@ -268,13 +286,15 @@ main{
 }
 
 .history p{
-    background: #fff;
+    background: #110971;
     border: 2px solid #110971;
+    color: white;
     border-radius: 10px;
     padding: 10px;
     text-align: justify;
     max-width: 800px;
     line-height: 20px;
+    box-shadow: 3px 3px 10px rgb(172, 172, 172);
 }
 
 .description, .desc2{
@@ -325,33 +345,64 @@ svg g:hover text, svg g:hover rect, svg g:hover polygon{
     display:block;
 }
 
+/* Achievement */
 .Achievement {
-    font-family: sans-serif;
+    /*font-family: sans-serif;*/
+    /*font-family: 'Balsamiq Sans', cursive;*/
 	position: relative;
 	width: 100%;
-	height: 700px;
-	border: 5px solid #CE0101;
-	border-radius: 25px;
+	height: 730px;
+	/*border: 5px solid #CE0101;
+	border-radius: 25px;*/
+    background: linear-gradient(rgb(216, 216, 216), rgb(241, 241, 241) 70%,rgb(94, 94, 94));
+    padding: 30px;
+    /*
     margin-top: 50px;
     margin-bottom: 50px;
+    */
+    overflow: auto;
+    text-align:center;
+    text-shadow: 2px 2px 5px #423c3c;
 }
 
 .content{
 	text-align: justify;
 	text-justify: inter-word;
+    
+}
+
+.Achievement .morebutton{
+    width: 50%;
+    padding: 15px 0;
+    background: rgb(190, 190, 190);
+    color: black;
+    text-align:center;
+    display:block;
+    margin: 15px auto;
+    box-sizing: border-box;
+    border: 2px solid #303030;
+    border-radius: 25px;
+    transition: 0.5s;
+    box-shadow: 3px 3px 10px rgb(104, 104, 104);
+}
+
+.Achievement .morebutton:hover{
+    background: black;
+    color:white;
+    text-shadow: 0px 0px 10px white ;
 }
 
 .Achievement .box {
+        display:inline-block;
         position: relative;
-		left: 100px;
         width: calc(300px - 15px);
         height: calc(400px - 20px);
         background: #ff8a8a;
-        float: left;
-        margin: 15px;
+        margin: 10px ;
         box-sizing: border-box;
         overflow: hidden;
         border-radius: 25px;
+        box-shadow: 3px 3px 10px rgb(104, 104, 104);
 }
 
 .Achievement .box .sub {
@@ -363,7 +414,6 @@ svg g:hover text, svg g:hover rect, svg g:hover polygon{
         background: #CE0101;
         transition: 0.5s;
         z-index: 1;
-        font-family: Brush Script MT;
     }
 	
 .Achievement .box:hover .sub {
@@ -372,6 +422,7 @@ svg g:hover text, svg g:hover rect, svg g:hover polygon{
         width: 70px;
         height: 70px;
         border-radius: 50%;
+        box-shadow:0 0 30px #CE0101;   
     }
 	
 .Achievement .box .sub .year {
@@ -386,6 +437,7 @@ svg g:hover text, svg g:hover rect, svg g:hover polygon{
 	
 .Achievement .box:hover .sub .year {
         font-size: 25px;
+        text-shadow: 0px 0px 5px #fff;
     }
 	
 .Achievement .box .content {
@@ -421,6 +473,7 @@ footer{
     background: #110971;
     color: #fff;
     text-align: center;
+    box-shadow: 0px 0px 10px rgb(65, 65, 65);
 }
 
 footer p{
@@ -439,6 +492,11 @@ footer p a{
 
 .icon img{
     height: 30px;
+    transition: 0.5s;
+}
+
+.icon a img:hover{
+    opacity:0.5;
 }
 
 /* Sidebar */
@@ -452,7 +510,7 @@ footer p a{
     cursor: pointer;
 }
 
-#sidebar {
+#sidebar{
     height: 100%;
     width: 0;
     position: fixed;
@@ -466,7 +524,7 @@ footer p a{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   }
   
-  #sidebar a {
+  #sidebar a{
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: larger;
@@ -476,11 +534,11 @@ footer p a{
     transition: 0.3s;
   }
   
-  #sidebar a:hover {
+  #sidebar a:hover{
     color: #CE0101;
   }
   
-  #sidebar .closebtn {
+  #sidebar .closebtn{
     position: absolute;
     top: 0;
     right: 25px;
@@ -532,6 +590,10 @@ footer p a{
     }
     .aboutus{
         padding: 10px;
+    }
+
+    .history p{
+        font-size: 12px;
     }
 }
 

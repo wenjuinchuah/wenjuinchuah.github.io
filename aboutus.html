@@ -5,10 +5,15 @@
         <link rel="stylesheet" href="src/style.css">
         <link rel="icon" href="src/icon.png"> <!--a random pic as favicon for now, can change later-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
     </head>
 
     <body>
-        <script src="script.js"></script>
         <header>
             <div class="logo">
                 <div class="logo-container">
@@ -70,21 +75,23 @@
                     <img src="src/bakerman.png" style="float: left;" alt="Bakerman">
                 </div>  
                 <div class="container">
-                    <h2 class="centered">About Us</h2>
+                    <h2 class="centered pacifico_L">About Us</h2>
                     <p class="centered">Gardenia Foods (S) Pte Ltd. (also known as Gardenia Bakeries or Gardenia) is a Singaporean baked-goods company with presence in Singapore, Indonesia, Malaysia and the Philippines. It is listed on the Singapore Exchange (SGX) via its parent company, QAF Limited, which also owns Bonjour Bakery, and are headquartered at the Chinatown Complex in South Bridge Road.</p>
                 </div>
             </div>
+            
+            <hr class="history_hr">
 
             <div class="history">
+
                 <div class="title">
-                    <h1> Brief History</h1>
+                    <h1 class="pacifico_L"> Brief History</h1>
                 </div>
                 <div class="desc2">
                     <p>Gardenia Bakeries (KL) Sdn Bhd rolled the first loaf of bread off its line in 1986. Within four short years, it became the bread market leader with an astounding 99 percent brand recall rate and 80 percent top-of-mind recall.</p>
                 </div>
                 <hr>
                 <div class="history-container">
-                    
                     <div class="year1">
                         <h2>1969</h2>
                         <div class="circle1">
@@ -125,8 +132,10 @@
                 </div>
             </div>
 
+            <hr class="history_hr">
+            
             <div class="Achievement">
-                <h1 style="text-align: center; padding: 50px 0px 50px 0px;">Achievements</h1>
+                <h1 class="pacifico_L" style="text-align: center; padding: 30px 0px 30px 0px; text-shadow: 3px 3px 5px rgb(122, 122, 122);">Achievements</h1>
                 <div class="box">
                     <div class="sub">
                         <h class="year">2001</h>
@@ -169,7 +178,13 @@
                         </ul>
                     </div>
                 </div>
+                
+                <div class="pacifico_normal morebutton" id="button" onclick="show()"> <h3>Show more ▼</h3> </div>
+
+                <!--
                 <h3 style="position:absolute; left:47%; top:600px;" id="button" onclick="show()">Show more</h3>
+                -->
+
                 <div id="showmore">
                     <div class="box">
                         <div class="sub">
@@ -267,12 +282,18 @@
                             </ul>
                         </div>
                     </div>
-                    <h3 style="position:absolute; left:47%; top:1400px;" id="button2" onclick="hide()" >Show less</h3>
+                <div class="pacifico_normal morebutton" id="button2" onclick="hide()"><h3>Show less ▲</h3></div>
+
+                <!--
+                <h3 style="position:absolute; left:47%; top:1400px;" id="button2" onclick="hide()" >Show less</h3>
+                -->
+
                 </div>
             </div>
+            <script src="script.js"></script>
         </main>
         <footer>
-            <p>Follow us on</p>
+            <p class="pacifico_normal">Follow us on</p>
             <div class="icon">
                 <a href="https://www.facebook.com/GardeniaKL" title="Facebook" target=_blank><img src="src/fb.png" alt="Facebook"></a>
                 <a href="https://www.instagram.com/gardenia_kl/" title="Instagram" target=_blank><img src="src/ig.png" alt="Instagram"></a>
