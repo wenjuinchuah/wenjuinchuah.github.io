@@ -68,6 +68,7 @@ nav{
     right: 30px;
     top: 2px;
     position: relative;
+    padding: 20px 0;
 }
 
 .dropdown, .language{
@@ -402,7 +403,7 @@ svg g:hover text, svg g:hover rect, svg g:hover polygon{
     /*font-family: 'Balsamiq Sans', cursive;*/
 	position: relative;
 	width: 100%;
-	height: 730px;
+	max-height: 600px;
 	/*border: 5px solid #CE0101;
 	border-radius: 25px;*/
     background: linear-gradient(rgb(216, 216, 216), rgb(241, 241, 241) 70%,rgb(94, 94, 94));
@@ -523,80 +524,95 @@ svg g:hover text, svg g:hover rect, svg g:hover polygon{
 footer{
     background: #110971;
     color: #fff;
-    text-align: center;
     box-shadow: 0px 0px 10px rgb(65, 65, 65);
+    padding-top: 10px;
 }
 
-footer p{
-    padding: 10px;;
+.footer-container{
+    display: flex;
+    justify-content: center;
 }
 
-footer p a{
-    text-decoration: none;
+.footer-container i{
+    border-radius: 25px;
+    background-color: #0e084d;
+    padding: 5px;
+    text-align: center;
+    width: 35px;
+}
+
+.footer-container h3, .footer-container p{
+    padding: 10px;
+}
+
+.footer-container p{
+    display: inline-block;
+    font-size: 14px;
+}
+
+.footer-container .subscribe{
+    width: 300px;
+}
+
+.footer-container .subscribe input{
+    font-family: inherit;
+    font-size: 14px;
+    text-align: start;
+    display: block;
+    padding: 5px;
+    width: 100%;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: 1px solid #f1f1f1;
+    height: 30px;
+    background-color: #110971;
     color: #fff;
-    font-weight: bold;
 }
 
-.icon{
-    margin: 5px 0 20px 0;
+.footer-container .subscribe button{
+    margin: 10px;
+    padding: 5px;
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 17px;
+    color: #000;
+    background-color: lightgray;
 }
 
-.icon img{
+footer .bottom{
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .bottom a{
+    color: lightgray;
+}
+
+footer .bottom a:hover{
+    color: #CE0101
+}
+
+footer .social-media{
+    margin: 10px 0;
+}
+
+footer .social-media-container img{
     height: 30px;
     transition: 0.5s;
+    margin-right: 10px;
 }
 
-.icon a img:hover{
+footer .social-media-container a{
+    text-decoration: none;
+    color: #fff;
+    height: 40px;
+}
+
+footer .social-media-container a img:hover{
     opacity:0.5;
 }
-
-/* Sidebar */
-.sidebar-icon{
-    display: none;
-    font-size: xx-large;
-    font-weight: bold;
-    margin: auto;
-    position: relative;
-    right: 20px;
-    cursor: pointer;
-}
-
-#sidebar{
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 2;
-    top: 0;
-    right: 0;
-    background-color: #f1f1f1;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 100px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  }
-  
-  #sidebar a{
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: larger;
-    font-weight: bold;
-    color: #000;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  #sidebar a:hover{
-    color: #CE0101;
-  }
-  
-  #sidebar .closebtn{
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-    padding-top: 60px;
-  }
 
 /* Display on different sizes */
 /* Not display slogan */
@@ -606,7 +622,6 @@ footer p a{
     }
 }
 
-/* Not display Navbar */
 @media only screen and (max-width: 1100px) {
     .nav-links .product, .nav-links .halal, .nav-links .dropdown{
        display: none;
@@ -657,6 +672,17 @@ footer p a{
     .products-contents p{
         font-size: 18px;
         line-height: normal;
+    }
+    .footer-container{
+        display: block;
+    }
+    .footer-container .icon p{
+        display: inline;
+    }
+    .footer-container .subscribe, .footer-container .icon{
+        margin: auto;
+        text-align: center;
+        padding: 10px 0;
     }
 }
 
