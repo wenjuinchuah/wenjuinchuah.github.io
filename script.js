@@ -27,18 +27,6 @@ function prev(){
     a.src = picshow[index];
 }
 
-function openNav() {
-    document.getElementById("sidebar").style.width = "250px";
-}
-
-function closeNav() {
-    document.getElementById("sidebar").style.width = "0";
-  }
-
-  function test(){
-	alert("testing");
-}
-
 function show(){
 	
 	let a = document.getElementById("showmore");

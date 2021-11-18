@@ -25,10 +25,10 @@
             </div>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="aboutus.html">About Us</a></li>
-                    <li><a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">Products</a></li>
-                    <li><a href="#">Halal Matters</a></li>
+                    <li class="home"><a href="index.html">Home</a></li>
+                    <li class="about-us"><a href="aboutus.html">About Us</a></li>
+                    <li class="product"><a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">Products</a></li>
+                    <li class="halal"><a href="#">Halal Matters</a></li>
                     <div class = "dropdown">
                         <button class="dropbtn">More</button>
                         <div class="dropdown-content">
@@ -52,22 +52,6 @@
                     </div>
                 </div>
             </nav>
-            <div class="sidebar-icon" onclick="openNav()">&#9776;</div>
-            <div id="sidebar">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="index.html">Home</a>
-                <a href="aboutus.html">About Us</a>
-                <a href="#">Products</a>
-                <a href="#">Halal Matters</a>
-                <a href="#">Activities</a>
-                <a href="#">Recipe</a>
-                <a href="#">Tour</a>
-                <a href="#">Health Tips</a>
-                <a href="#">R&D/QA</a>
-                <a href="#">The Truth</a>
-                <a href="#">Career Center</a>
-                <a href="#">Contact Us</a>
-            </div>
         </header>
 
         <main>
@@ -75,7 +59,15 @@
                 <img src="src/slide.gif" alt="slide">
             </div>
             <div class="products">
-                <img src="src/butter-sugar.png" alt="butter-sugar">
+                <div>
+                    <img src="src/butter_sugar.png" alt="butter-sugar">
+                </div>
+                <div class="products-contents">
+                    <h2>Check out our Latest Product now!</h2>
+                    <p>Try the creamy buttery goodness of Gardenia</p>
+                    <p>Delicious . Fresh . Convenient</p>
+                    <button class="pacifico_normal" type="button" onclick="document.location='#'">Know More</button>
+                </div>
             </div>
         </main>
 
