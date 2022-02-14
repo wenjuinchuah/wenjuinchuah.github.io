@@ -1,0 +1,10 @@
+body::before {
+    display: block;
+    content: '';
+    height: 60px;
+}
+
+#socialMedia a:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}

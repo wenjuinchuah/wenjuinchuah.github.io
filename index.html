@@ -8,14 +8,15 @@
     <!-- Bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/3e548c7801.js" crossorigin="anonymous"></script>
     <title>Chuah Wen Juin - Software Engineering Student</title>
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
         <div class="container">
             <a href="#" class="navbar-brand">Chuah Wen Juin</a>
 
@@ -48,7 +49,7 @@
     </nav>
 
     <!-- Introductiom -->
-    <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+    <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start" id="about">
         <div class="container">
             <div class="d-sm-flex align-items-center justify-content-between">
                 <div>
@@ -56,31 +57,81 @@
                     <p class="lead">Software Developer | Student | Malaysia | <a class="text-warning"
                             href="mailto:">chuahwj00@yahoo.com</a></p>
                     <p class="my-4">I am a novice in devoloping mobile application. <br />I learned to develop mobile
-                        application using Flutter. <br />I am a self-taught programmer and coding in Flutter is my first foray into software development.</p>
+                        application using Flutter. <br />I am a self-taught programmer and coding in Flutter is my first
+                        foray into software development.</p>
                     <button class="btn btn-primary btn-md">Learn More</button>
                 </div>
-                <img class="img-fluid w-25 d-none d-lg-block" src="img/self.png" alt="" />
+                <img class="img-fluid w-25 d-none d-lg-block" src="img/self.png" alt="profilePic" />
             </div>
         </div>
     </section>
 
     <!-- Social Media -->
-    <section class="bg-primary text-light p-5">
-        <div class="container">
-            <a href="https://www.linkedin.com/in/wenjuinchuah/" target="_blank" class="me-4">
-                <i class="fab fa-linkedin-in text-light fa-3x" aria-hidden="true"></i>
+    <section class="bg-primary text-light text-center p-5" id="education">
+        <div class="container" id="socialMedia">
+            <a href="https://www.linkedin.com/in/wenjuinchuah/" target="_blank" class="m-4">
+                <i class="bi bi-linkedin text-light h1"></i>
             </a>
-            <a href="https://github.com/wenjuinchuah" target="_blank" class="me-4">
-                <i class="fab fa-github text-light fa-3x" aria-hidden="true"></i>
+            <a href="https://github.com/wenjuinchuah" target="_blank" class="m-4">
+                <i class="bi bi-github text-light h1"></i>
             </a>
-            <a href="https://www.facebook.com/Cool987/" target="_blank" class="me-4">
-                <i class="fab fa-facebook text-light fa-3x" aria-hidden="true"></i>
+            <a href="https://www.facebook.com/Cool987/" target="_blank" class="m-4">
+                <i class="bi bi-facebook text-light h1"></i>
             </a>
-            <a href="http://instagram.com/notburdenwong" class="me-4">
-                <i class="fab fa-instagram text-light fa-3x" aria-hidden="true"></i>
+            <a href="https://www.instagram.com/vincent.chuah/" target="_blank" class="m-4">
+                <i class="bi bi-instagram text-light h1"></i>
             </a>
         </div>
     </section>
+
+    <!-- Education -->
+    <section class="p-5">
+        <div class="container">
+            <div class="h3 mb-4">Education Background</div>
+            <div class="row text-center g-4">
+                <!-- 2020-2024 -->
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body">
+                            <h5 class="card-title">UNIVERSITI MALAYSIA SARAWAK, UNIMAS</h5>
+                            <p class="card-text">2020-2024</span></p>
+                            <p>Bachelor of Computer Science (Software Engineering) with Honours</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2018-2019 -->
+                <div class="col-md">
+                    <div class="card bg-secondary text-light">
+                        <div class="card-body">
+                            <h5 class="card-title">SMK ST. GEROGE, TAIPING</h5>
+                            <p class="card-text">2018-2019</p>
+                            <p>Sijil Tinggi Persekolahan Malaysia (STPM)</p><br><br>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2013-2017 -->
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body">
+                            <h5 class="card-title">SMK DARUL RIDWAN</h5>
+                            <p class="card-text">2013-2017</p>
+                            <p>Sijil Pelajaran Malaysia (SPM)</p><br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-5 bg-dark text-light text-center position-relative">
+        <div class="container">
+            <p class="lead">Copyright &copy; 2022 Chuah Wen Juin</p>
+            <a href="#" class="position-absolute bottom-0 end-0 p-5">
+            </a>
+        </div>
+    </footer>
 
     <!-- Bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
