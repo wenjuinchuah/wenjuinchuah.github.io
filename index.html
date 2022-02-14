@@ -1,114 +1,91 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Gardenia Bakeries (KL) Sdn Bhd</title>
-        <link rel="stylesheet" href="src/style.css">
-        <link rel="icon" href="src/icon.png">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/3e548c7801.js" crossorigin="anonymous"></script>
+    <title>Chuah Wen Juin - Software Engineering Student</title>
+</head>
 
-    <body>
-        <header>
-            <div class="logo">
-                <div class="logo-container">
-                    <img src="src/gardenia.png" alt="Logo">
-                </div>
-                <div class="logo-container slogan">
-                    <img src="src/sogood.png" alt="Good">
-                </div>
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li class="home"><a href="index.html">Home</a></li>
-                    <li class="about-us"><a href="aboutus.html">About Us</a></li>
-                    <li class="product"><a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">Products</a></li>
-                    <li class="halal"><a href="#">Halal Matters</a></li>
-                    <div class = "dropdown">
-                        <button class="dropbtn">More</button>
-                        <div class="dropdown-content">
-                            <a href="#">Activities</a>
-                            <a href="#">Recipe</a>
-                            <a href="#">Tour</a>
-                            <a href="#">Health Tips</a>
-                            <a href="#">R&D/QA</a>
-                            <a href="#">The Truth</a>
-                            <a href="#">Career Center</a>
-                            <a href="#contactus">Contact Us</a>
-                        </div>
-                    </div>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+        <div class="container">
+            <a href="#" class="navbar-brand">Chuah Wen Juin</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><span
+                    class="navbar-toggler-icon"></span></button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#education" class="nav-link">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#interests" class="nav-link">Interests</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="awards#" class="nav-link">Awards</a>
+                    </li>
                 </ul>
-                <div class = "language">
-                    <button class="dropbtn"><img src="src/globe.png" alt="Globe"></button>
-                    <div class="dropdown-language">
-                        <a href="#">English</a>
-                        <a href="#">B. Melayu</a>
-                        <a href="#">中文</a>
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-        <main>
-            <div class="gif">
-                <img src="src/slide.gif" alt="slide">
             </div>
-            <div class="products">
+        </div>
+    </nav>
+
+    <!-- Introductiom -->
+    <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
                 <div>
-                    <img src="src/butter_sugar.png" alt="butter-sugar">
+                    <h1>Chuah <span class="text-warning">Wen Juin</span></h1>
+                    <p class="lead">Software Developer | Student | Malaysia | <a class="text-warning"
+                            href="mailto:">chuahwj00@yahoo.com</a></p>
+                    <p class="my-4">I am a novice in devoloping mobile application. <br />I learned to develop mobile
+                        application using Flutter. <br />I am a self-taught programmer and coding in Flutter is my first foray into software development.</p>
+                    <button class="btn btn-primary btn-md">Learn More</button>
                 </div>
-                <div class="products-contents">
-                    <h2>Check out our Latest Product now!</h2>
-                    <p>Try the creamy buttery goodness of Gardenia</p>
-                    <p>Delicious . Fresh . Convenient</p>
-                    <button class="pacifico_normal" type="button" onclick="document.location='#'">Know More</button>
-                </div>
+                <img class="img-fluid w-25 d-none d-lg-block" src="img/self.png" alt="" />
             </div>
-        </main>
+        </div>
+    </section>
 
-        <footer>
-            <div class="footer-container">
-                <div class="icon" id="contactus">
-                    <h3 class="pacifico_normal">Contact Us</h3>
-                    <div>
-                        <i class="fa fa-map-marker"></i>
-                        <p>Lot 3, Jalan Pelabur 23/1, 40300 Shah Alam, Selangor Darul Ehsan Malaysia</p>
-                    </div>
-                    <div>
-                        <i class="fa fa-envelope"></i>
-                        <p>customer_service@gardenia.com.my</p>
-                    </div>
-                    <div>
-                        <i class="fa fa-phone"></i>
-                        <p>03-55423228</p>
-                    </div>
-                </div>
-                <div class="subscribe">
-                    <h3 class="pacifico_normal">Subscribe</h3>
-                    <form>
-                        <input type="email" id="email" name="email" placeholder="Enter your Email ">
-                        <button type="submit">Subscribe</button>
-                    </form>
-                </div>
-            </div>
-            
-            <div class="bottom">
-                <div class="social-media">
-                    <div class="social-media-container">
-                        <a href="https://www.facebook.com/GardeniaKL" title="Facebook" target=_blank><img src="src/fb.png" alt="Facebook"></a>
-                        <a href="https://www.instagram.com/gardenia_kl/" title="Instagram" target=_blank><img src="src/ig.png" alt="Instagram"></a>
-                        <a href="https://twitter.com/gardenia_kl" title="Twitter" target=_blank><img src="src/tw.png" alt="Twitter"></a>
-                        <a href="https://www.youtube.com/user/GardeniaKL" title="Youtube" target=_blank><img src="src/yt.png" alt="Youtube"></a>
-                    </div>
-                </div>
-                <p>Copyright &copy (2004-2018) Gardenia Bakeries (KL) Sdn. Bhd (139386X) All Rights Reserved. | <a href="#">PRIVACY</a></p>
-            </div>
-        </footer>
-    </body>
+    <!-- Social Media -->
+    <section class="bg-primary text-light p-5">
+        <div class="container">
+            <a href="https://www.linkedin.com/in/wenjuinchuah/" target="_blank" class="me-4">
+                <i class="fab fa-linkedin-in text-light fa-3x" aria-hidden="true"></i>
+            </a>
+            <a href="https://github.com/wenjuinchuah" target="_blank" class="me-4">
+                <i class="fab fa-github text-light fa-3x" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.facebook.com/Cool987/" target="_blank" class="me-4">
+                <i class="fab fa-facebook text-light fa-3x" aria-hidden="true"></i>
+            </a>
+            <a href="http://instagram.com/notburdenwong" class="me-4">
+                <i class="fab fa-instagram text-light fa-3x" aria-hidden="true"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+</body>
+
 </html>
