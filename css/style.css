@@ -8,3 +8,16 @@ body::before {
     cursor: pointer;
     opacity: 0.7;
 }
+
+#skills-devicon .card:hover i {
+    color: #ffc107;
+}
+
+#skills-devicon .hover-zoom {
+    transition: transform .2s;
+}
+
+#skills-devicon .hover-zoom:hover {
+    -webkit-transform: scale(1.1);  /* Safari 3-8 */
+    transform: scale(1.1);
+}
