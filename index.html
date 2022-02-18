@@ -214,19 +214,43 @@
     <section class="p-5 bg-light text-dark" id="awards">
         <div class="container">
             <div class="h3 mb-4">Awards</div>
-            <div class="dropdown d-grid gap-2">
-                <button class="btn btn-light text-start dropdown-toggle border-dark" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#deanList" aria-expanded="false" aria-controls="deanList">
-                    <i class="bi bi-award"></i>
-                    Dean List Awards
-                    <span class="badge bg-warning rounded-pill">Latest</span>
-                    <div class="spacer"></div>
-                </button>
-            </div>
-            <div class="collapse" id="deanList">
-                <div class="card card-body">
-                    UNIMAS Dean List for Semester 1, 2 and 3
-                </div> 
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="dropdown d-grid gap-2 mb-4">
+                        <button class="btn btn-light text-start dropdown-toggle border-dark" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#deanList" aria-expanded="false"
+                            aria-controls="deanList">
+                            <i class="bi bi-award"></i>
+                            Dean List Awards
+                            <span class="badge bg-warning rounded-pill">Latest</span>
+                            <div class="spacer with-badge"></div>
+                        </button>
+                        <div class="collapse" id="deanList">
+                            <div class="card card-body">
+                                UNIMAS Dean List for Semester 1, 2 and 3
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dropdown d-grid gap-2">
+                        <button class="btn btn-light text-start dropdown-toggle border-dark" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#" aria-expanded="false" aria-controls=""
+                            disabled>
+                            <i class="bi bi-award"></i>
+                            Other Awards
+                            <div class="spacer no-badge"></div>
+                        </button>
+                        <div class="collapse" id="">
+                            <div class="card card-body">
+                                Nothing
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <img src="img/award.svg" alt="">
+                </div>
             </div>
         </div>
     </section>
