@@ -30,20 +30,23 @@
                     <li class="nav-item">
                         <a href="#about" class="nav-link">About</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a href="#projects" class="nav-link">Projects</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a href="#education" class="nav-link">Education</a>
                     </li>
                     <li class="nav-item">
                         <a href="#skills" class="nav-link">Skills</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a href="#interests" class="nav-link">Interests</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a href="#awards" class="nav-link">Awards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="src/resume.pdf" class="nav-link" target="_blank">Resume</a>
                     </li>
                 </ul>
             </div>
@@ -61,7 +64,7 @@
                     <p class="my-4">I am a novice in devoloping mobile application. <br />I learned to develop mobile
                         application using Flutter. <br />I am a self-taught programmer and coding in Flutter is my first
                         foray into software development.</p>
-                    <button class="btn btn-primary btn-md">Learn More</button>
+                    <a class="btn btn-primary btn-md" href="./src/resume.pdf" target="_blank">Learn More</a>
                 </div>
                 <img class="img-fluid w-25 d-none d-lg-block" src="img/self.png" alt="profilePic" />
             </div>
@@ -130,10 +133,10 @@
     <section class="p-5 bg-dark text-light" id="skills">
         <div class="container" id="skills-devicon">
             <div class="h3 mb-4">Skills</div>
-            <div class="row text-center g-4">
+            <div class="row text-center g-4 b">
                 <!-- c -->
-                <div class="col-md-3 col-sm-4 col-6">
-                    <div class="card bg-secondary text-light hover-zoom">
+                <div class="col-xl col-md-3 col-4">
+                    <div class="card bg-dark border-dark text-light hover-zoom">
                         <div class="card-body">
                             <i class="devicon-c-plain card-icon h1 m-3"></i>
                             <p class="card-text">C</span></p>
@@ -141,8 +144,8 @@
                     </div>
                 </div>
                 <!-- cpp -->
-                <div class="col-md-3 col-sm-4 col-6">
-                    <div class="card bg-secondary text-light hover-zoom">
+                <div class="col-xl col-md-3 col-4">
+                    <div class="card bg-dark border-dark text-light hover-zoom">
                         <div class="card-body">
                             <i class="devicon-cplusplus-plain card-icon h1 m-3"></i>
                             <p class="card-text">C++</span></p>
@@ -150,8 +153,8 @@
                     </div>
                 </div>
                 <!-- html5 -->
-                <div class="col-md-3 col-sm-4 col-6">
-                    <div class="card bg-secondary text-light hover-zoom">
+                <div class="col-xl col-md-3 col-4">
+                    <div class="card bg-dark border-dark text-light hover-zoom">
                         <div class="card-body">
                             <i class="devicon-html5-plain card-icon h1 m-3"></i>
                             <p class="card-text">HTML5</span></p>
@@ -159,8 +162,8 @@
                     </div>
                 </div>
                 <!-- css -->
-                <div class="col-md-3 col-sm-4 col-6">
-                    <div class="card bg-secondary text-light hover-zoom">
+                <div class="col-xl col-md-3 col-4">
+                    <div class="card bg-dark border-dark text-light hover-zoom">
                         <div class="card-body">
                             <i class="devicon-css3-plain card-icon h1 m-3"></i>
                             <p class="card-text">CSS</span></p>
@@ -168,8 +171,8 @@
                     </div>
                 </div>
                 <!-- javascript -->
-                <div class="col-md-3 col-sm-4 col-6">
-                    <div class="card bg-secondary text-light hover-zoom">
+                <div class="col-xl col-md-3 col-4">
+                    <div class="card bg-dark border-dark text-light hover-zoom">
                         <div class="card-body">
                             <i class="devicon-javascript-plain card-icon h1 m-3"></i>
                             <p class="card-text">JavaScript</span></p>
@@ -177,8 +180,8 @@
                     </div>
                 </div>
                 <!-- php -->
-                <div class="col-md-3 col-sm-4 col-6">
-                    <div class="card bg-secondary text-light hover-zoom">
+                <div class="col-xl col-md-3 col-4">
+                    <div class="card bg-dark border-dark text-light hover-zoom">
                         <div class="card-body">
                             <i class="devicon-php-plain card-icon h1 m-3"></i>
                             <p class="card-text">PHP</span></p>
@@ -186,8 +189,8 @@
                     </div>
                 </div>
                 <!-- mysql -->
-                <div class="col-md-3 col-sm-4 col-6">
-                    <div class="card bg-secondary text-light hover-zoom">
+                <div class="col-xl col-md-3 col-4">
+                    <div class="card bg-dark border-dark text-light hover-zoom">
                         <div class="card-body">
                             <i class="devicon-mysql-plain card-icon h1 m-3"></i>
                             <p class="card-text">MySQL</span></p>
@@ -195,8 +198,8 @@
                     </div>
                 </div>
                 <!-- flutter -->
-                <div class="col-md-3 col-sm-4 col-6">
-                    <div class="card bg-secondary text-light hover-zoom">
+                <div class="col-xl col-md-3 col-4">
+                    <div class="card bg-dark border-dark text-light hover-zoom">
                         <div class="card-body">
                             <i class="devicon-flutter-plain card-icon h1 m-3"></i>
                             <p class="card-text">Flutter</span></p>
@@ -208,12 +211,30 @@
         </div>
     </section>
 
+    <section class="p-5 bg-light text-dark" id="awards">
+        <div class="container">
+            <div class="h3 mb-4">Awards</div>
+            <div class="dropdown d-grid gap-2">
+                <button class="btn btn-light text-start dropdown-toggle border-dark" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#deanList" aria-expanded="false" aria-controls="deanList">
+                    <i class="bi bi-award"></i>
+                    Dean List Awards
+                    <span class="badge bg-warning rounded-pill">Latest</span>
+                    <div class="spacer"></div>
+                </button>
+            </div>
+            <div class="collapse" id="deanList">
+                <div class="card card-body">
+                    UNIMAS Dean List for Semester 1, 2 and 3
+                </div> 
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="p-5 bg-dark text-light text-center position-relative">
         <div class="container">
-            <p class="lead">Copyright &copy; 2022 Chuah Wen Juin</p>
-            <a href="#" class="position-absolute bottom-0 end-0 p-5">
-            </a>
+            <p>Copyright &copy; 2022 Chuah Wen Juin</p>
         </div>
     </footer>
 

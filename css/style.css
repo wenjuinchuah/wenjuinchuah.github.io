@@ -21,3 +21,9 @@ body::before {
     -webkit-transform: scale(1.1);  /* Safari 3-8 */
     transform: scale(1.1);
 }
+
+/* Awards' dropdown spacer */
+.spacer {
+    display: inline-block;
+    width: calc(100% - 230px);
+}
