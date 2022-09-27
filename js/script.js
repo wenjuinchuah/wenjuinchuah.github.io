@@ -20,12 +20,18 @@ window.addEventListener("load", function() {
 })
 
 window.addEventListener("resize", function() {
-    this.location.reload();
-    if (firstProjectCard.offsetHeight > thirdProjectCard.offsetHeight) {
-        setHeight(firstProjectCard);
+    if (this.screen.width > 1400) {
+        thirdProjectCard.offsetHeight = 389;
+        setHeight(thirdProjectCard); 
     } else {
-        setHeight(thirdProjectCard);
+        setHeight(firstProjectCard);
     }
+    
+    // if (firstProjectCard.offsetHeight > thirdProjectCard.offsetHeight) {
+    //     setHeight(firstProjectCard);
+    // } else {
+    //     setHeight(thirdProjectCard);
+    // }
     setCardHeight();
 })
 
