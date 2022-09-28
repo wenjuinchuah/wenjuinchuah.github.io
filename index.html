@@ -36,14 +36,14 @@
                     <li class="nav-item">
                         <a href="#about" class="nav-link">About</a>
                     </li>
-                    <!-- <li class="nav-item">
-                        <a href="#projects" class="nav-link">Projects</a>
-                    </li> -->
                     <li class="nav-item">
-                        <a href="#education" class="nav-link">Education</a>
+                        <a href="#projects" class="nav-link">Project Overview</a>
                     </li>
                     <li class="nav-item">
                         <a href="#skills" class="nav-link">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#education" class="nav-link">Education</a>
                     </li>
                     <!-- <li class="nav-item">
                         <a href="#interests" class="nav-link">Interests</a>
@@ -71,7 +71,7 @@
                     <p class="my-4">I am a novice in devoloping mobile application. <br />I learned to develop mobile
                         application using Flutter. <br />I am a self-taught programmer and coding in Flutter is my first
                         foray into software development.</p>
-                    <a class="btn btn-light btn-md" href="./src/CV.pdf" target="_blank">Learn More</a>
+                    <a class="btn btn-light btn-md mb-4" href="./src/CV.pdf" target="_blank">Learn More</a>
                 </div>
                 <img class="img-fluid w-25 d-none d-lg-block" src="img/self.png" alt="profilePic" />
             </div>
@@ -93,14 +93,14 @@
     </section>
 
     <!-- Project -->
-    <section class="p-5" id="project">
+    <section class="p-5" id="projects">
         <div class="container">
             <div class="h3 mb-4">Project Overview</div>
             <div class="row g-4">
                 <!-- Weather Now -->
-                <div class="col-md-4">
-                    <div class="card bg-dark text-light">
-                        <div class="card-body" id="firstProjectCard">
+                <div class="col-lg-4">
+                    <div class="card bg-dark text-light" id="firstProjectCard">
+                        <div class="card-body">
                             <h5 class="card-title"><img src="./img/weather_now_logo.png" alt="Weather Now Logo"
                                     width="50px" height="50px" /> Weather Now</h5>
                             <hr>
@@ -115,10 +115,11 @@
                             </p>
                             <p class="card-text">This application aimed to provide accurate weather information to all
                                 users in Malaysia by using the data collected by the Malaysian Meteorological Department
-                                and publicinfobanjir.water.gov.my.</p>
-                            <p class="card-text text-center">
+                                and publicinfobanjir.water.gov.my.
+                            </p>
+                            <p class="text-lg-center m-1" id="store-badge">
                                 <a href="https://apps.apple.com/us/app/weather-now/id1644352298" target="_blank"><img
-                                        src="img/download-on-the-app-store.svg" alt="download-at-the-app-store" /></a>
+                                        src="img/download-on-the-app-store.svg" alt="download-at-the-app-store" style="padding: 10px" /></a>
                                 <a href='https://play.google.com/store/apps/details?id=io.github.wenjuinchuah.weather_now&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'
                                     target="_blank"><img alt='Get it on Google Play'
                                         src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'
@@ -128,9 +129,9 @@
                     </div>
                 </div>
                 <!-- Health Diary -->
-                <div class="col-md-4">
-                    <div class="card bg-secondary text-light">
-                        <div class="card-body" id="secondProjectCard">
+                <div class="col-lg-4">
+                    <div class="card bg-secondary text-light" id="secondProjectCard">
+                        <div class="card-body">
                             <h5 class="card-title"><img
                                     src="https://raw.githubusercontent.com/wenjuinchuah/java-project/main/src/images/favicon.png"
                                     alt="Health Diary Logo" width="50px" height="50px" /> Health Diary</h5>
@@ -142,7 +143,8 @@
                                         class="devicon-java-plain colored card-icon h2"></i></a>
                             </p>
                             <p class="card-text">Health Diary is a school project which it allows the user to trace
-                                their Body Mass Index (BMI) with a clear Graphical User Interface (GUI) to help users always
+                                their Body Mass Index (BMI) with a clear Graphical User Interface (GUI) to help users
+                                always
                                 stay healthy.</p>
                             <div class="mt-xl-4 mt-auto"><a class="btn btn-dark btn-md"
                                     href="https://github.com/wenjuinchuah/java-project" target="_blank">View on
@@ -151,9 +153,9 @@
                     </div>
                 </div>
                 <!-- Blood Donation DBMS -->
-                <div class="col-md-4">
-                    <div class="card bg-light text-dark">
-                        <div class="card-body" id="thirdProjectCard">
+                <div class="col-lg-4">
+                    <div class="card bg-light text-dark" id="thirdProjectCard">
+                        <div class="card-body">
                             <h5 class="card-title"><img
                                     src="https://raw.githubusercontent.com/wenjuinchuah/database-project/main/src/blood_donation.png"
                                     alt="Blood Donation DBMS Logo" width="50px" height="50px" /> Blood Donation DBMS
@@ -285,7 +287,7 @@
                             <p class="card-text">MySQL</span></p>
                         </div>
                     </div>
-                </div>                
+                </div>
                 <!-- firebase -->
                 <div class="col-xl-2 col-md-3 col-sm-4 col-6">
                     <div class="card bg-dark border-dark text-light hover-zoom">
@@ -362,21 +364,6 @@
                         </div>
                     </div>
                     <div class="dropdown d-grid gap-2 mb-4">
-                        <button class="btn btn-light text-start dropdown-toggle border-dark" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#others" aria-expanded="false"
-                            aria-controls="others">
-                            <i class="bi bi-award"></i>
-                            Other Awards
-                            <div class="spacer no-badge"></div>
-                        </button>
-                        <div class="collapse" id="others">
-                            <div class="card card-body">
-                                <p>Best Shift Leader with Excellent Service Award served as a School Librarian.</p>
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="dropdown d-grid gap-2 mb-4">
                         <button class="btn btn-light text-secondary text-start dropdown-toggle border-secondary"
                             type="button" data-bs-toggle="collapse" data-bs-target="#" aria-expanded="false"
                             aria-controls="" disabled>
@@ -389,7 +376,7 @@
                                 Nothing
                             </div>
                         </div>
-                    </div> -->
+                    </div>
 
                 </div>
                 <div class="col-md-6">

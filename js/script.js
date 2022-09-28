@@ -9,6 +9,7 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 let card = document.querySelector("#firstCard");
 let firstProjectCard = document.querySelector("#firstProjectCard");
 let thirdProjectCard = document.querySelector("#thirdProjectCard");
+let storeBadge = document.querySelector("#store-badge");
 
 window.addEventListener("load", function() {
     if (firstProjectCard.offsetHeight >= thirdProjectCard.offsetHeight) {
@@ -20,10 +21,10 @@ window.addEventListener("load", function() {
 })
 
 window.addEventListener("resize", function() {
-    if (this.screen.width > 1400) {
-        thirdProjectCard.offsetHeight = 389;
-        setHeight(thirdProjectCard); 
+    if (storeBadge.offsetHeight == 115.32) {
+        setHeight(firstProjectCard); 
     } else {
+        firstProjectCard.offsetHeight = 431;
         setHeight(firstProjectCard);
     }
     
