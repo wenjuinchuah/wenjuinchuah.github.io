@@ -10,8 +10,12 @@ let card = document.querySelector("#firstCard");
 let firstProjectCard = document.querySelector("#firstProjectCard");
 let thirdProjectCard = document.querySelector("#thirdProjectCard");
 let storeBadge = document.querySelector("#store-badge");
+let copyright = document.querySelector("#copyright");
 
 window.addEventListener("load", function() {
+    let currentYear = new Date().getFullYear();
+    copyright.innerHTML = `<p>Copyright &copy; ${currentYear} Chuah Wen Juin</p>`;
+
     if (firstProjectCard.offsetHeight >= thirdProjectCard.offsetHeight) {
         setHeight(firstProjectCard);
     } else {
@@ -59,11 +63,9 @@ function getHeight(projectCard) {
 // cardHeight setter
 function setHeight(projectCard) {
     if (projectCard.offsetHeight == firstProjectCard.offsetHeight) {
-        console.log('firstProjectHeight: ' + firstProjectCard.offsetHeight);
         document.querySelector("#thirdProjectCard").style.height = getHeight(firstProjectCard) + "px";
         document.querySelector("#secondProjectCard").style.height = getHeight(firstProjectCard) + "px";
     } else {
-        console.log('thirdProjectHeight: ' + thirdProjectCard.offsetHeight);
         document.querySelector("#firstProjectCard").style.height = getHeight(thirdProjectCard) + "px";
         document.querySelector("#secondProjectCard").style.height = getHeight(thirdProjectCard) + "px";
     }
