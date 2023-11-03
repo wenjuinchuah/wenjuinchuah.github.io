@@ -25,7 +25,7 @@ body::before {
 /* Awards' dropdown spacer */
 .with-badge {
     display: inline-block;
-    width: calc(100% - 230px);
+    width: calc(100% - 219px);
 }
 
 .no-badge {
